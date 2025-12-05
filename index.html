@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre viajes turísticos en España: destinos principales, ciudades patrimonio y comunidades autónomas.">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title data-lang="comun.titulo"></title>
+</head>
+<body class="body body-inicio">
+    <header class="header">
+        <figure class="contenedor-bandera">
+            <img src="./images/bandera.webp" alt="Bandera de España" loading="lazy">
+        </figure>
+
+        <h1 data-lang="comun.titulo" class="titulo-nivel1"></h1>
+        <div class="contenedor-botones">
+            <div class="contenedor-lenguajes">
+                <button id="btn-es">ES</button>
+                <button id="btn-en">EN</button>
+            </div>
+            <button class="btn-abrir-menu" id="btn-abrir-menu" aria-label="Abrir menú">☰</button>
+        </div>    
+    </header>
+
+    <nav id="menu" class="menu">
+        <div class="contenedor-btn-cerrar-menu">
+            <button class="btn-cerrar-menu" id="btn-cerrar-menu" aria-label="Cerrar menú">X</button>
+        </div>
+        <ul>
+            <li><a href="./index.html" data-lang="comun.menu.inicio" class="menu-activo"></a></li>
+            <li><a href="./historia.html" data-lang="comun.menu.historia"></a></li>
+            <li><a href="./mapa.html" data-lang="comun.menu.mapa"></a></li>
+            <li><a href="#" aria-haspopup="true" aria-expanded="false" data-lang="comun.menu.destinos"></a>
+                <ul class="submenu">
+                    <li><a href="./destinos/caceres.html">Cáceres</a></li>
+                    <li><a href="./destinos/islas-baleares.html">Islas Baleares</a></li>
+                    <li><a href="./destinos/sevilla.html">Sevilla</a></li>
+                    <li><a href="./destinos/bilbao.html">Bilbao</a></li>
+                    <li><a href="./destinos/zaragoza.html">Zaragoza</a></li>
+                    <li><a href="./destinos/malaga.html">Málaga</a></li>
+                    <li><a href="./destinos/salamanca.html">Salamanca</a></li>
+                    <li><a href="./destinos/barcelona.html">Barcelona</a></li>
+                    <li><a href="./destinos/santander.html">Santander</a></li>
+                </ul>
+            </li>
+            <li><a href="#" aria-haspopup="true" aria-expanded="false" data-lang="comun.menu.ciudades"></a>
+                <ul class="submenu">
+                    <li><a href="./ciudades/alcala.html">Alcalá de Henares</a></li>
+                    <li><a href="./ciudades/avila.html">Ávila</a></li>
+                    <li><a href="./ciudades/cordoba.html">Córdoba</a></li>
+                    <li><a href="./ciudades/cuenca.html">Cuenca</a></li>
+                    <li><a href="./ciudades/toledo.html">Toledo</a></li>
+                    <li><a href="./ciudades/ubeda.html">Úbeda</a></li>
+                </ul>
+            </li>
+            <li><a href="#" aria-haspopup="true" aria-expanded="false" data-lang="comun.menu.comunidades"></a>
+                <ul class="submenu">
+                    <li><a href="./comunidades/aragon.html">Aragón</a></li>
+                    <li><a href="./comunidades/islas-canarias.html">Islas Canarias</a></li>
+                    <li><a href="./comunidades/ciudad-de-ceuta.html">Ciudad de Ceuta</a></li>
+                    <li><a href="./comunidades/comunidad-de-madrid.html">Comunidad de Madrid</a></li>
+                    <li><a href="./comunidades/galicia.html">Galicia</a></li>
+                    <li><a href="./comunidades/pais-vasco.html">País Vasco</a></li>
+                    <li><a href="./comunidades/region-de-murcia.html">Región de Murcia</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+<main class="main-inicio">
+    <!-- Región con etiqueta ARIA y descripción -->
+    <div class="carrusel" id="carrusel" role="region" aria-label="Carrusel de imágenes de destinos turísticos en España" aria-live="polite">
+
+        <!-- Contenedor de slides -->
+        <div class="slides" role="list">
+            <div class="slide" role="group" aria-roledescription="slide" aria-label="1 de 5">
+                <img src="../images/Carrusel_1.jpg" alt="Vista panorámica de un destino turístico en España">
+            </div>
+            <div class="slide" role="group" aria-roledescription="slide" aria-label="2 de 5">
+                <img src="../images/Carrusel_2.jpg" alt="Paisaje emblemático de España">
+            </div>
+            <div class="slide" role="group" aria-roledescription="slide" aria-label="3 de 5">
+                <img src="../images/Carrusel_3.jpg" alt="Monumento histórico en España">
+            </div>
+            <div class="slide" role="group" aria-roledescription="slide" aria-label="4 de 5">
+                <img src="../images/Carrusel_4.jpg" alt="Arquitectura típica española">
+            </div>
+            <div class="slide" role="group" aria-roledescription="slide" aria-label="5 de 5">
+                <img src="../images/Carrusel_5.jpg" alt="Lugar turístico en España">
+            </div>
+        </div>
+        <!-- Botones accesibles -->
+        <button class="btn-prev" aria-label="Imagen anterior" aria-controls="carrusel">❮</button>
+        <button class="btn-next" aria-label="Imagen siguiente" aria-controls="carrusel">❯</button>
+
+        <!-- Indicadores -->
+        <div class="indicadores" role="tablist" aria-label="Indicadores del carrusel"></div>
+    </div>
+</main>
+
+
+    <footer class="footer">
+        <h2 class="titulo-nivel2" data-lang="comun.footer.contacto">Contacto:</h2>
+        <ul class="redes-sociales">
+            <li>
+                <a href="#">
+                    <img src="./images/facebook.svg" alt="Facebook de Turismo España">
+                    <span>Turismo España</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/x-twitter.svg" alt="X-Twitter de Turismo España">
+                    <span>@turismoespaña</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/youtube.svg" alt="Youtube de Turismo España">
+                    <span>Turismo España</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/instagram.svg" alt="Instagram de Turismo España">
+                    <span>Turismo España</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
